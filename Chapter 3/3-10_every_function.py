@@ -12,7 +12,7 @@ print(languages)
 print(languages.pop())#removes and returns last item in list
 print(languages)
 
-del languages[2] #delets language at second spot
+del languages[2] #deletes language at second spot
 print(languages)
 
 languages.append('english') #adds back english
