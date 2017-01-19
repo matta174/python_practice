@@ -37,21 +37,7 @@ The code above results in the following output:
 
 #### 2.1 Personal Message
 
-The following code does a few things we've already covered. ```message_name.title()``` will make each word included in the variable uppercase. Displaying as follows:
-
->Matthew Compton
-
-all ```\n``` does is create a new line. Given the name ``` name = 'matthew compton'``` there are several things we could do wit this data. ```print(name.upper())``` will give us 
-
->MATTHEW COMPTON
-
-When we are given ```print(name.lower())``` we will get:
-
->matthew compton
-
-This won't change simply because it was already lowercase but say we gave ``` name = 'MaTtHeW CoMpToN' ``` and then tried ```print(name.lower()) ``` we would receive:
-
->matthew compton
+The following code does a few things we've already covered and a few new thins.
 
 ```python
 message_name = "matthew compton"
@@ -77,8 +63,39 @@ print(famous_quote)
 ```
 
 
+
+You may have noticed ```message_name.title()```  this will make each word included in the variable uppercase. Displaying as follows:
+
+>Matthew Compton
+
+all  ```\n```  does is create a new line. Given the name  ``` name = 'matthew compton'```  there are several things we could do wit this data.  ```print(name.upper())```  will give us 
+
+>MATTHEW COMPTON
+
+When we are given  ```print(name.lower())```  we will get:
+
+>matthew compton
+
+This won't change simply because it was already lowercase but say we gave  ``` name = 'MaTtHeW CoMpToN' ```  and then tried  ```print(name.lower()) ```  we would receive:
+
+>matthew compton
+
+
 #### 2.8 Numbers
 
+```python
+# The following file is meant to show how to work with various math functions in Python, as well as properly including numerical results in a string
+print("5 + 3 = " + str(5+3))
+print("4 * 2 = "+ str(4*2))
+print("16 / 2 = "+str(16/2))
+print("2^3 = "+ str(2**3))
 
+favorite_number = 33
+message= "My favorite number is: "+ str(favorite_number) + " pretty neat huh?"
+print(message)
+```
 
+The above code shows how math functions work in python. The + and - signs work as you would expect however be careful as in most programming languages, Python included == actually means 'is equal to' when evaluating certain functions. You may have noticed another new thing showing up, ```print("5 + 3 = " + str(5+3)) ``` str tells python to print whatever is enveloped to print as a string rather than whatever other value.
+
+### Chapter 3
 
