@@ -7,11 +7,14 @@
 
 #### 2.1 Simple Message
 The first "Hello World type program"
+
 ```python
 message = "This is a simple message. Hurray!"
 print(message)
 ```
+
 This first program will print the message. `message = ` will set whatever string literal to the variable "message" which is then called by `print(message)` resulting in the following output:
+
 >This is a simple message. Hurray!
 
 
@@ -28,6 +31,7 @@ message2 = "This is concatenation"
 print(message + message2)
 ```
 The code above results in the following output:
+
 >Oh Hello there! This is concatenation
 
 
