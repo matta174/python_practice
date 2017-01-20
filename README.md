@@ -68,7 +68,7 @@ You may have noticed ```message_name.title()```  this will make each word includ
 
 >Matthew Compton
 
-all  ```\n```  does is create a new line. Given the name  ``` name = 'matthew compton'```  there are several things we could do wit this data.  ```print(name.upper())```  will give us 
+all  ```\n```  does is create a new line. Given ``` name = 'matthew compton' ```  there are several things we could do wit this data.  ```print(name.upper())```  will give us 
 
 >MATTHEW COMPTON
 
@@ -99,3 +99,18 @@ The above code shows how math functions work in python. The + and - signs work a
 
 ### Chapter 3
 
+#### 3.1 Working with Indexes
+
+```python
+friends = ['cody','josh','chase','preston']
+print(friends[0].title())
+print(friends[1].title())
+print(friends[2].title())
+print(friends[3].title())
+```
+The above code has our first example of an index in Python, you can declare an index by adding brackets []. 
+For example: ``` my_index = [] ``` this will create an empty list. For the code above ``` print(friends[0].title()) ``` will output:
+
+>Cody
+
+Aside from ``` .title() ``` which we know how works ``` print(friends[0]) ``` will output whatever data is stored in the first location in the index. Which in Python starts at [0].
