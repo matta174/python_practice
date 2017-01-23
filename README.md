@@ -83,6 +83,7 @@ This won't change simply because it was already lowercase but say we gave  ``` n
 
 #### 2.8 Numbers
 ##### Code:
+
 ```python
 # The following file is meant to show how to work with various math functions in Python, as well as properly including numerical results in a string
 print("5 + 3 = " + str(5+3))
@@ -101,6 +102,7 @@ The above code shows how math functions work in python. The + and - signs work a
 
 #### 3.1 Working with Indexes
 ##### Code:
+
 ```python
 friends = ['cody','josh','chase','preston']
 print(friends[0].title())
@@ -118,6 +120,7 @@ Aside from ``` .title() ``` which we know how works ``` print(friends[0]) ``` wi
  
 #### 3.2 Greetings
 ##### Code:
+
 ```python
 friends = ['cody','josh','chase','preston']
 print("Why hello there " + friends[0].title() + " how are you doing?")
@@ -135,6 +138,7 @@ I could add whatever message I wanted to this like perhapts I'd want to do. ```p
 
 #### 3.3 My Own List
 ##### Code:
+
 ```python
 motorcycles = ['BMW','Honda','Harley Davidson','Ducati']
 print(motorcycles)
