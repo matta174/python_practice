@@ -82,7 +82,7 @@ This won't change simply because it was already lowercase but say we gave  ``` n
 
 
 #### 2.8 Numbers
-
+##### Code:
 ```python
 # The following file is meant to show how to work with various math functions in Python, as well as properly including numerical results in a string
 print("5 + 3 = " + str(5+3))
@@ -100,7 +100,7 @@ The above code shows how math functions work in python. The + and - signs work a
 ### Chapter 3
 
 #### 3.1 Working with Indexes
-
+##### Code:
 ```python
 friends = ['cody','josh','chase','preston']
 print(friends[0].title())
@@ -114,3 +114,72 @@ For example: ``` my_index = [] ``` this will create an empty list. For the code 
 >Cody
 
 Aside from ``` .title() ``` which we know how works ``` print(friends[0]) ``` will output whatever data is stored in the first location in the index. Which in Python starts at [0].
+
+ 
+#### 3.2 Greetings
+##### Code:
+```python
+friends = ['cody','josh','chase','preston']
+print("Why hello there " + friends[0].title() + " how are you doing?")
+print("Why hello there " + friends[1].title() + " how are you doing?")
+print("Why hello there " + friends[2].title() + " how are you doing?")
+print("Why hello there " + friends[3].title() + " how are you doing?")
+```
+
+This code is a slight modification of 3.1. The biggest difference is rather than ```print(friends[0].title())``` we have: ```print("Why hello there " +friends[0].title() + " how are you doing?")```. This just adds a simple greeting message to the above output resulting in:
+>Why hello there Cody how are you doing?
+
+I could add whatever message I wanted to this like perhapts I'd want to do. ```print(friends[0].title() + ' have you heard of Python before?'``` which would simply output:
+>Cody have you heard of Python before?
+
+
+#### 3.3 My Own List
+##### Code:
+```python
+motorcycles = ['BMW','Honda','Harley Davidson','Ducati']
+print(motorcycles)
+message = "My favorite motorcycle is a "+motorcycles[0]
+print(message)
+
+print("I would like to own a "+motorcycles[1]+ " motorcycle.\n")
+
+motorcycles.append('Yamaha')
+print(motorcycles )
+
+motorcycles = []
+
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki')
+
+print(motorcycles)
+
+motorcycles.insert(0,'ducati')
+print(motorcycles)
+
+del motorcycles[0]
+print(motorcycles)
+
+del motorcycles[2]
+print(motorcycles)
+
+motorcycles = ['yamaha','honda','harley davidson','ducati']
+last_motorcycle = motorcycles.pop()
+
+print(motorcycles)
+print("The last motorcycle I owned was a "+last_motorcycle.title())
+
+first_owned = motorcycles.pop(0)
+print('The first motorcycle I owned was a '+ first_owned.title())
+
+motorcycles = ['yamaha','honda','harley davidson','ducati']
+
+waytooexpensive = 'ducati'
+motorcycles.remove(waytooexpensive)
+print(motorcycles)
+print("\nA "+waytooexpensive.title() + " is too expensive for my tastes.")
+```
+Here I've done some stuff we already know and added a few things we don't yet. First I define my own list with ```motorcycles = ['BMW','Honda','Harley Davidson','Ducati']``` now say I wanted to add something to this list that I didn't have earlier. What I would do in this case is ```motorcycles.append('kawasaki')``` now when I try ```print(motorcycles)``` we would see:
+>['BMW', 'Honda', 'Harley Davidson', 'Ducati', 'kawasaki']
+append adds to the end of the list but what if I wanted to add an item at a particular spot. First let's delete the last item in that list with ```del motorcycles [4]``` which deletes the item at place 4 in the list (remember that lists begin at spot [0] in Python and most languages for that matter) let's now add Kawasaki to the center of the list. We can do this with ```motorcycles.insert(2,'Kawasaki')``` and when we print this we will see:
+>['BMW', 'Honda', 'Kawasaki', 'Harley Davidson', 'Ducati']
