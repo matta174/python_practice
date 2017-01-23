@@ -180,6 +180,9 @@ print(motorcycles)
 print("\nA "+waytooexpensive.title() + " is too expensive for my tastes.")
 ```
 Here I've done some stuff we already know and added a few things we don't yet. First I define my own list with ```motorcycles = ['BMW','Honda','Harley Davidson','Ducati']``` now say I wanted to add something to this list that I didn't have earlier. What I would do in this case is ```motorcycles.append('kawasaki')``` now when I try ```print(motorcycles)``` we would see:
+
 >['BMW', 'Honda', 'Harley Davidson', 'Ducati', 'kawasaki']
+
 append adds to the end of the list but what if I wanted to add an item at a particular spot. First let's delete the last item in that list with ```del motorcycles [4]``` which deletes the item at place 4 in the list (remember that lists begin at spot [0] in Python and most languages for that matter) let's now add Kawasaki to the center of the list. We can do this with ```motorcycles.insert(2,'Kawasaki')``` and when we print this we will see:
+
 >['BMW', 'Honda', 'Kawasaki', 'Harley Davidson', 'Ducati']
