@@ -311,6 +311,7 @@ Will output:
 print(sorted(places_i_want_to_visit)) #temporarily sorts the data in the list alphabetically, leaving original data
 ```
 Will output:
+
 >['australia', 'los angeles', 'moscow', 'taj mahal', 'the equator']
 
 However the sorted method only temporarily sorts alphabetically
@@ -325,6 +326,7 @@ places_i_want_to_visit.reverse() #reverses the order of the list
 print(places_i_want_to_visit) #prints reversed list
 ```
 This will as expected reverse the list. Here's the output:
+
 >['los angeles', 'australia', 'moscow', 'the equator', 'taj mahal']
 
 ```python
@@ -332,6 +334,7 @@ places_i_want_to_visit.reverse() #reverses again reverting it back to original l
 print(places_i_want_to_visit) #prints newly returned original list
 ```
 To revert back is easy. All that needs to be done is reverse again to get the original list.
+
 >['taj mahal', 'the equator', 'moscow', 'australia', 'los angeles']
 
 ```python
@@ -339,9 +342,10 @@ places_i_want_to_visit.sort() #permanently sorts list alphabetically
 print(places_i_want_to_visit) #prints new list
 ```
 To permanently sort your list alphabetically you can use the sort() function. The above code results in this:
+
 >['australia', 'los angeles', 'moscow', 'taj mahal', 'the equator']
 
-**Be careful though you will __**NOT**__ be able to get the original order of this list after doing this!**
+**Be careful though you will **NOT** be able to get the original order of this list after doing this!**
 
 ```python
 places_i_want_to_visit.sort(reverse=True) #permanently reverses list alphabetically
@@ -349,6 +353,7 @@ print(places_i_want_to_visit) #prints new list
 ```
 Finally if we want to sort in reverse alphabetical all we have to add in the function is sort(reverse=True)
 Resulting in:
+
 >['the equator', 'taj mahal', 'moscow', 'los angeles', 'australia']
 
 
