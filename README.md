@@ -463,7 +463,7 @@ Line by line this code outputs this:
 
 #### 4.1 Pizzas
 
-#####Code:
+##### Code:
 
 ```python
 pizzas = ['pepperoni','cheese','sausage']
@@ -491,7 +491,7 @@ Would output the exact same which is
 
 #### 4.2 Animals
 
-#####Code:
+##### Code:
 
 ```python
 animals = ['dog','cat','hamster']
@@ -520,7 +520,7 @@ Final output:
 
 #### 4.4 One Million
 
-#####Code:
+##### Code:
 
 ```python
 
@@ -533,7 +533,7 @@ This code is the same as 4.3 however it goes all the way to one million then pri
 
 #### 4.5 Summing a Million
 
-#####Code:
+##### Code:
 
 ```python
 
@@ -553,5 +553,30 @@ Here is the output:
 
 >500000500000
 
+#### 4.6 Odd Numbers
 
+##### Code:
+
+```python
+numbers = []
+for value in range (1,21,2):
+    numbers.append(value)
+    print(value)
+print(numbers)
+```
+This code does the usual of initializing numbers but our for loop has a tiny difference. It is now going by twos. The final numbers list when you run this will look like this:
+
+>[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+#### 4.7 Threes
+
+##### Code:
+
+```python
+#Make a list of the multiples of 3 from 3 to 30. Use a for loop to print the numbers in your list.
+numbers = [value *3 for value in range (3,31)]
+for number in numbers:
+    print(number)
+```
+Here, as my verbose commenting states, we make a list of the multiples of 3 from 3 to 30. We then make a for loop to print the numbers in the list. Using list comprehension, you describe the process using which the list should be created.
 
