@@ -479,6 +479,7 @@ for pizza in pizzas:
 print('Pizza is just very good, I like to eat it all the time.\n')
 ```
 Here we see our first for each loop. This is going to be very useful in the future. What the above code is doing is for pizza in list pizzas it'll loop through until there are none left. The syntax could have been different and still output the exact same for example:
+
 ```python
 pizzas = ['pepperoni','cheese','sausage']
 for i in pizzas: 
@@ -486,6 +487,7 @@ for i in pizzas:
     
 print('Pizza is just very good, I like to eat it all the time.\n)
 ```
+
 Would output the exact same which is 
 >I like Pepperoni pizza!
 
