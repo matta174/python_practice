@@ -1,12 +1,14 @@
 
 
-magicians = ['bill','bob','george']
+magicians = ['bill', 'bob', 'george']
 
-def show_magicians(magicians):
+
+def show_magicians(list):
     for magician in magicians:
-        print(magician.title()+" Hello!")
+        print(magician.title() + " Hello!")
 
-def make_great(magicians):
+
+def make_great(list):
     great_magicians = []
 
     while magicians:
@@ -16,7 +18,15 @@ def make_great(magicians):
 
     for great_magician in great_magicians:
         magicians.append(great_magician)
-     
-make_great(magicians)
 
+    return magicians
+
+magicians = ['bill', 'bob', 'george']
+show_magicians(magicians)
+print('\n')
+
+great_magicians = make_great(magicians[:])
+show_magicians(great_magicians)
+
+print('\n')
 show_magicians(magicians)
